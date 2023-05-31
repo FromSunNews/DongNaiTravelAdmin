@@ -1,0 +1,252 @@
+$color-markdown-dark: #222738 !default;
+$color-markdown-border-dark: rgba(255, 255, 255, 0.13) !default;
+
+
+.main-content {
+  &::-webkit-scrollbar {
+    width: 20px !important;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #979797 !important;
+    border-radius: 20px !important;
+    border: 6px solid transparent !important;
+    background-clip: content-box !important;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #979797c4 !important;
+  }
+}
+// .w-md-editor .title {
+//   line-height: unset !important;
+//   font-size: unset !important;
+//   font-weight: unset !important;
+// }
+
+// .line-break {
+//   white-space: pre-wrap;
+// }
+
+// .w-md-editor-input::-webkit-scrollbar {
+//   width: 20px;
+// }
+
+// .w-md-editor-input::-webkit-scrollbar-track {
+//   background-color: transparent;
+// }
+
+// .w-md-editor-input::-webkit-scrollbar-thumb {
+//   background-color: #979797;
+//   border-radius: 20px;
+//   border: 6px solid transparent;
+//   background-clip: content-box;
+// }
+
+// .w-md-editor-input::-webkit-scrollbar-thumb:hover {
+//   background-color: #979797c4;
+// }
+
+
+
+// .w-md-editor-preview::-webkit-scrollbar {
+//   width: 20px;
+// }
+
+// .w-md-editor-preview::-webkit-scrollbar-track {
+//   background-color: transparent;
+// }
+
+// .w-md-editor-preview::-webkit-scrollbar-thumb {
+//   background-color: #979797;
+//   border-radius: 20px;
+//   border: 6px solid transparent;
+//   background-clip: content-box;
+// }
+
+// .w-md-editor-preview::-webkit-scrollbar-thumb:hover {
+//   background-color: #979797c4;
+// }
+
+// .w-md-editor-toolbar ul {
+//   line-height: 32px  !important;
+// }
+
+// .w-md-editor-toolbar li > button {
+//   height: 32px !important;
+//   padding: 10px !important;
+//   line-height: 10px !important;
+//   border-radius: 4px !important;
+// }
+
+// [data-color-mode="light"] {
+//   .w-md-editor-input {
+//     .w-md-editor-text {
+//       textarea {
+//         -webkit-text-fill-color: rgb(0, 0, 0) !important;
+//         color: rgb(0, 0, 0) !important;
+//       }
+//     }
+//   }
+// }
+
+// [data-color-mode="dark"] {
+//   .w-md-editor {
+//     background-color: #222738 !important;
+//     .w-md-editor-toolbar  {
+//       background-color: #222738 !important;
+//     }
+//     .w-md-editor-content {
+//       background-color: #222738 !important;
+//       .w-md-editor-input {
+//         .w-md-editor-text {
+//           textarea {
+//             -webkit-text-fill-color: var(--body-color) !important;
+//             color: var(--body-color) !important;
+//           }
+//         }
+//       }
+//       .w-md-editor-preview {
+//         background-color: #222738 !important;
+//         .wmde-markdown {
+//           background-color: #222738 !important;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .w-md-editor-content {
+  
+//   font-family: 'Roboto', 'sans-serif' !important;
+//   .w-md-editor-input {
+//     .wmde-markdown-color {
+//       pre {
+//         line-height: 1.5 !important;
+//         opacity: 0;
+//       }
+//     }
+//     .w-md-editor-text {
+//       textarea {
+//         line-height: 1.5 !important;
+//         padding: 24px !important;
+//       }
+//     }
+//   }
+// }
+
+.rc-md-editor {
+  font-family: 'Roboto', 'sans-serif' !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+  .rc-md-navigation {
+    border-radius: 4px 4px 0 0  !important;
+    min-height: 42px !important;
+    .button-wrap {
+      .button {
+        border-radius: 4px !important;
+        margin-right: 8px !important;
+        min-width: 28px !important;
+        height: 30px !important;
+        &:hover {
+          background-color: #cdcdcd60 !important;
+        }
+      }
+    }
+  }
+  .drop-wrap {
+    border-radius: 4px !important;
+    top: 30px !important;
+  }
+  .editor-container {
+    .section {
+      textarea {
+        &::-webkit-scrollbar {
+          width: 20px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #979797;
+          border-radius: 20px;
+          border: 6px solid transparent;
+          background-clip: content-box;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background-color: #979797c4;
+        }
+      }
+      .html-wrap {
+        color: black !important;
+        &::-webkit-scrollbar {
+          width: 20px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #979797;
+          border-radius: 20px;
+          border: 6px solid transparent;
+          background-clip: content-box;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background-color: #979797c4;
+        }
+      }
+    }
+  }
+}
+
+[data-color-mode="dark"] {
+  .rc-md-editor {
+    border: 1px solid rgba(255, 255, 255, 0.13) !important;
+    background-color: #222738 !important;
+    .rc-md-navigation {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.13) !important;
+      background-color: #222738 !important;
+      .button-wrap {
+        .button {
+          color: #cdcdcd !important;
+        }
+      }
+    }
+    .drop-wrap {
+      border: 1px solid rgba(255, 255, 255, 0.13) !important;
+      background-color: #222738 !important;
+      .header-list {
+        .list-item {
+          &:hover {
+            background-color: #cdcdcd60 !important;
+          }
+        }
+      }
+    }
+    .editor-container {
+      background-color: #222738 !important;
+      .section {
+        background-color: #222738 !important;
+        border-right: none !important;
+        textarea {
+          background-color: #222738 !important;
+          border-right: 1px solid rgba(255, 255, 255, 0.13) !important;
+          color: #cdcdcd !important;
+        }
+        .custom-html-style {
+          color: #cdcdcd !important;
+        }
+      }
+    }
+  }
+}

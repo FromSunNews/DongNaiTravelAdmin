@@ -1,0 +1,109 @@
+.sign-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	&.sign-bg-right {
+		left: auto;
+		right: 0;
+	}
+}
+.gradient-main {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.login-bottom {
+    margin-top: -12.5rem;
+}
+@include media-breakpoint-up(xxl) {
+	.auth-card {
+		padding: 0 6.25rem;
+	}
+}
+@include media-breakpoint-down(sm) {
+	.login-header {
+		height: 12.5rem !important;
+	}
+	.login-bottom {
+		margin-top: -6.25rem;
+	}
+}
+
+
+.auth__form__input-field {
+  max-width: 380px;
+  width: 100%;
+  height: 3.437rem;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  border-radius: 3.437rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 85%;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+}
+
+.auth__form__input-field i {
+  text-align: center;
+  line-height: 3.437rem;
+  color: #acacac;
+  font-size: 1.1rem;
+}
+
+.auth__form__input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333;
+  border-radius: inherit;
+}
+
+.auth__form__input-field input::-webkit-input-placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.auth__form__input-field input:-ms-input-placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.auth__form__input-field input::-ms-input-placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.auth__form__input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.text-error {
+	font-size: 13px;
+	font-weight: 550;
+	padding-top: 10px;
+}
+
+.promise-send-btn {
+  transition: all .3s ease-in-out;
+  &.pending-send-btn {
+    opacity: .5;
+    pointer-events: none;
+  }
+}
+
+.loading-progress {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.4);
+}

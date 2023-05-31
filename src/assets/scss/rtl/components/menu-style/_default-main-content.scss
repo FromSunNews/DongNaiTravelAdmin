@@ -1,0 +1,33 @@
+.sidebar {
+    &+.main-content {
+        margin-right: var(--sidebar-width);
+        margin-left: auto;
+        &::-webkit-scrollbar {
+            width: 20px;
+          }
+  
+          &::-webkit-scrollbar-track {
+            background-color: transparent;
+          }
+  
+          &::-webkit-scrollbar-thumb {
+            background-color: #979797;
+            border-radius: 20px;
+            border: 6px solid transparent;
+            background-clip: content-box;
+          }
+  
+          &::-webkit-scrollbar-thumb:hover {
+            background-color: #979797c4;
+          }
+    }
+}
+@include media-breakpoint-down(xl) {
+    .sidebar-default.sidebar-mini.sidebar-boxed+.main-content,
+    .sidebar-default.sidebar-boxed+.main-content,
+    .sidebar-default.sidebar-mini+.main-content,
+    .sidebar-default+.main-content {
+        margin-right: 0;
+        margin-left: unset;
+    }
+}

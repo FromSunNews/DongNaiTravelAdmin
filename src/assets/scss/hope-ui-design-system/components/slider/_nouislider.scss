@@ -1,0 +1,41 @@
+.noUi-target {
+    border-color: transparent;
+    background: unset;
+}
+.noUi-horizontal {
+    height: $noUi-track-height;
+    .noUi-handle {
+        cursor: pointer;
+        width: $noUi-track-btn-width;
+        height: $noUi-track-btn-height;
+        top: $noUi-track-btn-align-y;
+        right: $noUi-track-btn-align-x;
+        border: $noUi-trake-btn-border;
+        border-radius: $noUi-track-btn-radius;
+        &:after, &:before{
+            content: unset
+        }
+    }
+}
+
+@include noUi-varient('.slider', $primary);
+
+@each $color, $value in $noUi-varients {
+    @include noUi-varient('.slider-#{$color}',$value)
+}
+
+// Range Slider css
+.horizontal-slider {
+    width: 100%;
+  }
+  
+  .example-track.example-track-1 {
+      background: $primary !important;
+      
+  }
+  .horizontal-slider .example-track {
+    height: 8px;
+    background: #eee;
+    border-radius: 25px;
+  }
+  
